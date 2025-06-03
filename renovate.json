@@ -1,3 +1,117 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": true,
+  "configMigration": true,
+  "semanticCommitType": "fix",
+  "reviewers": [
+    "team:internal-services"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "matchCurrentVersion": "!/^0\\.0/",
+      "automerge": true
+    },
+    {
+      "packagePatterns": [
+        "^tokio[-_]?"
+      ],
+      "excludePackageNames": [
+        "tokio-postgres"
+      ],
+      "groupName": "tokio packages"
+    },
+    {
+      "packagePatterns": [
+        "^tower[-_]?"
+      ],
+      "groupName": "tower packages"
+    },
+    {
+      "packagePatterns": [
+        "^(tonic|prost)[-_]?"
+      ],
+      "groupName": "tonic & prost packages"
+    },
+    {
+      "packagePatterns": [
+        "^(deadpool-postgres|postgres|tokio-postgres)[-_]?"
+      ],
+      "groupName": "postgres packages"
+    },
+    {
+      "packagePatterns": [
+        "^serde[-_]?"
+      ],
+      "groupName": "serde packages"
+    },
+    {
+      "packagePatterns": [
+        "^chrono[-_]?"
+      ],
+      "groupName": "chrono packages"
+    },
+    {
+      "packagePatterns": [
+        "^(kube|k8s)[-_]?"
+      ],
+      "groupName": "k8s packages"
+    },
+    {
+      "packagePatterns": [
+        "^google-cloud[-_]?"
+      ],
+      "groupName": "google-cloud packages"
+    },
+    {
+      "packagePatterns": [
+        "^tracing[-_]?"
+      ],
+      "groupName": "tracing packages"
+    },
+    {
+      "packagePatterns": [
+        "rust-common\\.git$"
+      ],
+      "groupName": "rust-common packages"
+    }
+  ],
+  "customManagers": [
+    {
+      "fileMatch": [
+        "^rust-toolchain\\.toml?$"
+      ],
+      "matchStrings": [
+        "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(?:\\.\\d+)?)\""
+      ],
+      "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)",
+      "depNameTemplate": "rust",
+      "lookupNameTemplate": "rust-lang/rust",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": [
+        "(^|/)Cargo\\.toml$"
+      ],
+      "matchStrings": [
+        "\\[(workspace\\.)?(dev-|build-)?dependencies\\.(?<depName>[a-zA-Z\\-]+)\\]\\s*git\\s*=\\s*\"(?<packageName>.+)\"\\s*rev\\s*=\\s*\"(?<currentDigest>.+)\""
+      ],
+      "datasourceTemplate": "git-refs",
+      "versioningTemplate": "git"
+    }
+  ]
 }
