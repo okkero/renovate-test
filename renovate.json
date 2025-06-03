@@ -96,7 +96,7 @@
       ],
       "matchStrings": [
         "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(?:\\.\\d+)?)\""
-      ],ı
+      ],
       "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)",
       "depNameTemplate": "rust",
       "packageNameTemplate": "rust-lang/rust",
