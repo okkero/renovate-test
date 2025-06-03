@@ -27,80 +27,79 @@
       "automerge": true
     },
     {
-      "packagePatterns": [
-        "^tokio[-_]?"
-      ],
-      "excludePackageNames": [
-        "tokio-postgres"
-      ],
-      "groupName": "tokio packages"
+      "groupName": "tokio packages",
+      "matchPackageNames": [
+        "/^tokio[-_]?/",
+        "!tokio-postgres"
+      ]
     },
     {
-      "packagePatterns": [
-        "^tower[-_]?"
-      ],
-      "groupName": "tower packages"
+      "groupName": "tower packages",
+      "matchPackageNames": [
+        "/^tower[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "^(tonic|prost)[-_]?"
-      ],
-      "groupName": "tonic & prost packages"
+      "groupName": "tonic & prost packages",
+      "matchPackageNames": [
+        "/^(tonic|prost)[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "^(deadpool-postgres|postgres|tokio-postgres)[-_]?"
-      ],
-      "groupName": "postgres packages"
+      "groupName": "postgres packages",
+      "matchPackageNames": [
+        "/^(deadpool-postgres|postgres|tokio-postgres)[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "^serde[-_]?"
-      ],
-      "groupName": "serde packages"
+      "groupName": "serde packages",
+      "matchPackageNames": [
+        "/^serde[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "^chrono[-_]?"
-      ],
-      "groupName": "chrono packages"
+      "groupName": "chrono packages",
+      "matchPackageNames": [
+        "/^chrono[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "^(kube|k8s)[-_]?"
-      ],
-      "groupName": "k8s packages"
+      "groupName": "k8s packages",
+      "matchPackageNames": [
+        "/^(kube|k8s)[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "^google-cloud[-_]?"
-      ],
-      "groupName": "google-cloud packages"
+      "groupName": "google-cloud packages",
+      "matchPackageNames": [
+        "/^google-cloud[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "^tracing[-_]?"
-      ],
-      "groupName": "tracing packages"
+      "groupName": "tracing packages",
+      "matchPackageNames": [
+        "/^tracing[-_]?/"
+      ]
     },
     {
-      "packagePatterns": [
-        "rust-common\\.git$"
-      ],
-      "groupName": "rust-common packages"
+      "groupName": "rust-common packages",
+      "matchPackageNames": [
+        "/rust-common\\.git$/"
+      ]
     }
   ],
   "customManagers": [
     {
-      "fileMatch": [
-        "^rust-toolchain\\.toml?$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^rust-toolchain\\.toml?$/"
       ],
       "matchStrings": [
         "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(?:\\.\\d+)?)\""
       ],
       "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)",
       "depNameTemplate": "rust",
-      "lookupNameTemplate": "rust-lang/rust",
+      "packageNameTemplate": "rust-lang/rust",
       "datasourceTemplate": "github-releases"
     }
   ]
