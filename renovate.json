@@ -82,9 +82,9 @@
       ]
     },
     {
-      "groupName": "rust-common packages",
+      "versioning": "gitı",
       "matchPackageNames": [
-        "/rust-common\\.git$/"
+        "/test-crate\\.git$/"
       ]
     }
   ],
