@@ -102,16 +102,6 @@
       "depNameTemplate": "rust",
       "lookupNameTemplate": "rust-lang/rust",
       "datasourceTemplate": "github-releases"
-    },
-    {
-      "fileMatch": [
-        "(^|/)Cargo\\.toml$"
-      ],
-      "matchStrings": [
-        "\\[(workspace\\.)?(dev-|build-)?dependencies\\.(?<depName>[a-zA-Z\\-]+)\\]\\s*git\\s*=\\s*\"(?<packageName>.+)\"\\s*rev\\s*=\\s*\"(?<currentDigest>.+)\""
-      ],
-      "datasourceTemplate": "git-refs",
-      "versioningTemplate": "git"
     }
   ]
 }
