@@ -7,5 +7,5 @@ edition = "2024"
 
 
 [dependencies.session]
-git = "ssh://git@github.com/Fredrik-Louisa/rust-common.git"
-rev = "4e7a633e8b6e0966c3f98c6c5f45684103c44e6d"
+git = "ssh://git@github.com:okkero/test-crate.git"
+rev = "1e6fa6f26a67c3e313bd2a84c3415646e77c5ba5"
