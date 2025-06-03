@@ -12,4 +12,4 @@ dependencies = [
 [[package]]
 name = "test-crate"
 version = "0.1.0"
-source = "git+ssh://git@github.com/okkero/test-crate.git?rev=1e6fa6f26a67c3e313bd2a84c3415646e77c5ba5#1e6fa6f26a67c3e313bd2a84c3415646e77c5ba5"
+source = "git+ssh://git@github.com/okkero/test-crate.git?rev=781a5411204a1dbc50bd5a9736f990fea94c6013#781a5411204a1dbc50bd5a9736f990fea94c6013"
