@@ -82,7 +82,7 @@
       ]
     },
     {
-      "versioning": "gitı",
+      "versioning": "git",
       "matchPackageNames": [
         "/test-crate\\.git$/"
       ]
@@ -96,7 +96,7 @@
       ],
       "matchStrings": [
         "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+(?:\\.\\d+)?)\""
-      ],
+      ],ı
       "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)",
       "depNameTemplate": "rust",
       "packageNameTemplate": "rust-lang/rust",
