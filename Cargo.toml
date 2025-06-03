@@ -6,6 +6,6 @@ edition = "2024"
 [dependencies]
 
 
-[dependencies.session]
-git = "ssh://git@github.com:okkero/test-crate.git"
+[dependencies.test-crate]
+git = "ssh://git@github.com/okkero/test-crate.git"
 rev = "1e6fa6f26a67c3e313bd2a84c3415646e77c5ba5"
