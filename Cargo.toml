@@ -10,4 +10,4 @@ tokio = { version = "1.45.1", features = ["full"] }
 
 [dependencies.test-crate]
 git = "ssh://git@github.com/okkero/test-crate.git"
-rev = "05a59ec4919ba348f57d5ab687e8597223a094e0"
+tag = "v1.0.1"
