@@ -84,7 +84,7 @@
     {
       "versioning": "semver",
       "matchPackageNames": [
-        "/test-crate\\.git$/"ı
+        "/test-crate\\.git$/"
       ]
     }
   ],
