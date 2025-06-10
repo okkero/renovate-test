@@ -82,9 +82,9 @@
       ]
     },
     {
-      "versioning": "git",
+      "versioning": "semver",
       "matchPackageNames": [
-        "/test-crate\\.git$/"
+        "/test-crate\\.git$/"ı
       ]
     }
   ],
