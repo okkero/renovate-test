@@ -82,6 +82,7 @@
       ]
     },
     {
+      "rangeStrategy": "pin",
       "versioning": "git",
       "matchPackageNames": [
         "/test-crate\\.git$/"
