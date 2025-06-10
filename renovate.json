@@ -6,6 +6,7 @@
   "reviewers": [
     "team:internal-services"
   ],
+  "rangeStrategy": "pin",
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
@@ -82,7 +83,6 @@
       ]
     },
     {
-      "rangeStrategy": "pin",
       "matchPackageNames": [
         "/test-crate\\.git$/"
       ]
