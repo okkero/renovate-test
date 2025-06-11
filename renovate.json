@@ -82,6 +82,7 @@
       ]
     },
     {
+      "versioning": "cargo",
       "matchPackageNames": [
         "/test-crate\\.git$/"
       ]
