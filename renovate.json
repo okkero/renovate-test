@@ -10,6 +10,7 @@
     "enabled": true,
     "automerge": true
   },
+  "rangeStrategy": "pin",
   "packageRules": [
     {
       "matchUpdateTypes": [
@@ -82,7 +83,6 @@
       ]
     },
     {
-      "versioning": "cargo",
       "matchPackageNames": [
         "/test-crate\\.git$/"
       ]
