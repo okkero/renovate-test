@@ -10,7 +10,6 @@
     "enabled": true,
     "automerge": true
   },
-  "rangeStrategy": "pin",
   "packageRules": [
     {
       "matchUpdateTypes": [
