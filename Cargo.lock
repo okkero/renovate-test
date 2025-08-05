@@ -266,7 +266,7 @@ dependencies = [
 [[package]]
 name = "test-crate"
 version = "0.1.0"
-source = "git+https://github.com/okkero/test-crate.git?rev=4bdf8f871e408669c8e9d9138352490930814525#4bdf8f871e408669c8e9d9138352490930814525"
+source = "git+ssh://git@github.com/okkero/test-crate.git?rev=0eaa423d83c9891ce6b7d85d828529ed24e4639d#0eaa423d83c9891ce6b7d85d828529ed24e4639d"
 
 [[package]]
 name = "tokio"
